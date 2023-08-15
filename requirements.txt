@@ -2,3 +2,4 @@ keras==2.13.1
 shap
 tensorflow
 numba==0.53
+numpy==1.24.3
