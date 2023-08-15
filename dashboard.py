@@ -1,16 +1,16 @@
-# import libraries
-import streamlit as st
 from PIL import Image
-import base64
+import streamlit as st
+import matplotlib as plt
 from keras.utils import to_categorical
 from sklearn.preprocessing import LabelEncoder
+from tensorflow import keras
 import pandas as pd
 import numpy as np
 import tensorflow as tf
+from streamlit_shap import st_shap
 import shap
 from shap import Explanation
 from shap.plots import waterfall
-from streamlit_shap import st_shap
 
 # CSS
 def get_base64(bin_file):
@@ -101,6 +101,7 @@ cbx_proba = st.sidebar.button('Prédire')
 ########################################################################################################################################
 
 loaded_model = tf.keras.models.load_model('models/best-model_5pub.h5')
+loaded_model.summary()
 
 y = ['FTB', 'PTB']
 encoder = LabelEncoder()
@@ -162,14 +163,15 @@ def my_prediction(unknown, new_samp):
     prediction_ = np.argmax(to_categorical(prediction), axis=1)
     prediction_ = encoder.inverse_transform(prediction_)
 
-    st.markdown(
-        f"<h3 style='color: #000;'>The predicted phenotype of {unknown} is:</h3> <h3 style='color: #ca7ebf;'><b>{prediction_[0]}</h3>", unsafe_allow_html=True)
+    st.info(
+        f"The predicted phenotype of {unknown} is: {prediction_[0]}")
 
     # -------------------------------------------------------------------------
 
     #get features from shap
     weights = pd.read_csv("datas/explainerSHAP.csv", sep=',', index_col=0, header=0)
     weights = weights.to_numpy()
+
     explainer = shap.DeepExplainer(loaded_model, weights)
     shap_values = explainer.shap_values(sample)
 
@@ -180,23 +182,14 @@ def my_prediction(unknown, new_samp):
 
     st.info("Variables importantes du modèle")
 
-    sv = explainer.shap_values(sample)
-
     st_shap(shap.summary_plot(shap_values[1],
                     feature_names=test_sample_t.columns,
                     plot_type="bar", show=False))
-
-    st_shap(shap.waterfall_plot(shap.Explanation(values=shap_values[1][0],
-                                      base_values=explainer.expected_value[1],
-                                      data=test_sample_t.iloc[0],
-                                      feature_names=test_sample_t.columns.tolist()), show=False))
-
-    st_shap(shap.plots._waterfall.waterfall_legacy(explainer.expected_value[1], shap_values[1][0], features = test_sample_t.iloc[0], feature_names = test_sample_t.columns.tolist(), show = True))
-
-    st_shap(shap.waterfall_plot(shap.Explanation(values=shap_values[1][0],
-                                         base_values=explainer.expected_value[1],
-                                         data=test_sample_t.iloc[0],
-                                         feature_names=test_sample_t.columns.tolist()), show=False))
+    
+    st_shap(waterfall(Explanation(shap_values[1][0], 
+        explainer.expected_value[1], 
+        data=test_sample_t.iloc[0], 
+        feature_names=test_sample_t.columns)))
 
 if uploaded_file is not None:
     new_samp = pd.read_csv(uploaded_file, sep='\t')
