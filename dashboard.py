@@ -12,6 +12,9 @@ import shap
 from shap import Explanation
 from shap.plots import waterfall
 
+tf.compat.v1.disable_v2_behavior()  # <-- HERE !
+# tf.enable_eager_execution()
+
 # CSS
 def get_base64(bin_file):
     with open(bin_file, 'rb') as f:
