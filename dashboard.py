@@ -8,7 +8,6 @@ import pandas as pd
 import numpy as np
 import tensorflow as tf
 import shap
-from streamlit_shap import st_shap
 
 # CSS
 def get_base64(bin_file):
