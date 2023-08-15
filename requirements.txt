@@ -6,3 +6,5 @@ streamlit-shap==1.0.2
 tensorflow==2.13.0
 keras==2.13.1
 shap==0.42.1
+matplotlib==3.7.2
+matplotlib-inline==0.1.3
