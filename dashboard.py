@@ -182,14 +182,7 @@ def my_prediction(unknown, new_samp):
 
     sv = explainer.shap_values(sample)
 
-    st_shap(shap.summary_plot(shap_values[1],
-                    feature_names=test_sample_t.columns,
-                    plot_type="bar", show=False))
 
-    st_shap(waterfall(Explanation(sv[1][0], 
-            explainer.expected_value[1], 
-            data=test_sample_t.iloc[0], 
-            feature_names=test_sample_t.columns)))
 
 if uploaded_file is not None:
     new_samp = pd.read_csv(uploaded_file, sep='\t')
