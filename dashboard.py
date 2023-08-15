@@ -99,7 +99,7 @@ Ageselect = st.sidebar.selectbox("Age", Age)
 Timepointselect = st.sidebar.selectbox("Timepoint", Timepoint)
 
 # checkbox to display different options
-cbx_proba = st.sidebar.button('Prédire')
+cbx_proba = st.sidebar.button('Predict')
 
 ########################################################################################################################################
 
@@ -183,7 +183,7 @@ def my_prediction(unknown, new_samp):
 
     # compute SHAP values
 
-    st.info("Variables importantes du modèle")
+    st.info("Features importance explaining local prediction")
 
     st_shap(shap.summary_plot(shap_values[1],
                     feature_names=test_sample_t.columns,
