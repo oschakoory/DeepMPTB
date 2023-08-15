@@ -7,6 +7,10 @@ from sklearn.preprocessing import LabelEncoder
 import pandas as pd
 import numpy as np
 import tensorflow as tf
+import shap
+from shap import Explanation
+from shap.plots import waterfall
+from streamlit_shap import st_shap
 
 # CSS
 def get_base64(bin_file):
@@ -163,7 +167,29 @@ def my_prediction(unknown, new_samp):
 
     # -------------------------------------------------------------------------
 
+    #get features from shap
+    weights = pd.read_csv("datas/explainerSHAP.csv", sep=',', index_col=0, header=0)
+    weights = weights.to_numpy()
+    explainer = shap.DeepExplainer(loaded_model, weights)
+    shap_values = explainer.shap_values(sample)
 
+
+    #plot graphs
+
+    # compute SHAP values
+
+    st.info("Variables importantes du modèle")
+
+    sv = explainer.shap_values(sample)
+
+    st_shap(shap.summary_plot(shap_values[1],
+                    feature_names=test_sample_t.columns,
+                    plot_type="bar", show=False))
+
+    st_shap(waterfall(Explanation(sv[1][0], 
+            explainer.expected_value[1], 
+            data=test_sample_t.iloc[0], 
+            feature_names=test_sample_t.columns)))
 
 if uploaded_file is not None:
     new_samp = pd.read_csv(uploaded_file, sep='\t')
@@ -175,5 +201,3 @@ if uploaded_file is not None:
 if cbx_proba:
 
     my_prediction(uploaded_file.name.split('_')[0], new_samp)
-
-
