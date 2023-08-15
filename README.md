@@ -1,3 +1,3 @@
 # mptb
 
-link to app : https://mptbdashboard.streamlit.app/
+link to app : https://deepmptb.streamlit.app/
