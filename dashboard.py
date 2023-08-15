@@ -8,8 +8,6 @@ import pandas as pd
 import numpy as np
 import tensorflow as tf
 import shap
-from shap import Explanation
-from shap.plots import waterfall
 from streamlit_shap import st_shap
 
 # CSS
