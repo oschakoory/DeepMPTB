@@ -76,7 +76,7 @@ col1, mid, col2 = st.columns([2, 2, 8])
 with mid:
     st.image(logo)
 with col2:
-    st.markdown("<h1 style='color: #ca7ebf;'>DeepMTPB</h1>",
+    st.markdown("<h1 style='color: #ca7ebf;'>DeepMPTB</h1>",
                 unsafe_allow_html=True)
 
 # Loading data....
