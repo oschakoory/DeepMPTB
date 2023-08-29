@@ -1,4 +1,4 @@
-<img align="right" src="datas/deepMPTB.png" width="200" alt="DeepMPTB logo"/>
+<img align="right" src="datas/logo.png" width="200" alt="DeepMPTB logo"/>
 
 # DeepMPTB
 
