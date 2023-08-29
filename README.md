@@ -11,7 +11,7 @@ Step 3: On the docker terminal, go to the root directory of this projet where yo
 Step 4: Execute this command to build your docker image </br>
 &nbsp;&nbsp;<h4>docker build -t deepmptb</h4></br>
 Step 5: Execute this command to run the application locally </br>
-&nbsp;&nbsp;<h4>docker run -p 8501:8501 deepmptb</h42></br>
+&nbsp;&nbsp;<h4>docker run -p 8501:8501 deepmptb</h4></br>
 </br>
 Using the browser of your choice, you can access the application at http://localhost:8501 </br>
 </br>
