@@ -1,4 +1,4 @@
-<img align="right" src="docs/RiboaTaxa_Icon.png" width="200" alt="DeepMPTB logo"/>
+<img align="right" src="datas/deepMPTB.png" width="200" alt="DeepMPTB logo"/>
 
 # DeepMPTB
 
