@@ -25,6 +25,6 @@ DeepMPTB needs
 - Age of woman 
 - Trimester of sample collection
 
-The taxonomic profiles are produced by RiboTaxa, a metagenomics classifier for precise species level identification from shotgun metagenomics.
+The taxonomic profiles are produced by <a class="reference external" href="https://github.com/oschakoory/RiboTaxa" target="_blank" rel="noopener noreferrer">RiboTaxa</a>, a metagenomics classifier for precise species level identification from shotgun metagenomics.
 
 In case if the three clinical data are not available, users can choose "unknown" for each data.
