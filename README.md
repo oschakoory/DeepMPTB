@@ -16,3 +16,15 @@ Step 5: Execute this command to run the application locally </br>
 Using the browser of your choice, you can access the application at http://localhost:8501 </br>
 </br>
 Enjoy! </br>
+
+## DeepMPTB for prediction
+
+DeepMPTB needs
+- Taxnomomic profile table (see datas/)
+- Ethnicity of woman
+- Age of woman 
+- Trimester of sample collection
+
+The taxonomic profiles are produced by RiboTaxa, a metagenomics classifier for precise species level identification from shotgun metagenomics.
+
+In case if the three clinical data are not available, users can choose "unknown" for each data.
