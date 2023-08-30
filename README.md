@@ -15,7 +15,6 @@ Step 5: Execute this command to run the application locally </br>
 </br>
 Using the browser of your choice, you can access the application at http://localhost:8501 </br>
 </br>
-Enjoy! </br>
 
 ## DeepMPTB for prediction
 
