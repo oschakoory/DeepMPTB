@@ -2,7 +2,7 @@
 
 # DeepMPTB
 
-link to app : https://deepmptb.streamlit.app/
+DeepMPTB can directly be access here: https://deepmptb.streamlit.app/
 
 # Running the application locally
 Step 1: Install docker - follow this link https://docs.docker.com/engine/install/ubuntu/ </br>
