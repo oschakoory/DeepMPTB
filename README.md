@@ -20,7 +20,7 @@ Enjoy! </br>
 ## DeepMPTB for prediction
 
 DeepMPTB needs
-- Taxnomomic profile table (see datas/)
+- Taxnomomic profile table (see datas/ERR10897566_SSU_taxonomy_abundance.tsv as a example)
 - Ethnicity of woman
 - Age of woman 
 - Trimester of sample collection
