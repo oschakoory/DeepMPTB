@@ -4,6 +4,10 @@
 ![GitHub](https://img.shields.io/github/license/oschakoory/RiboTaxa)
 ![GitHub](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Foschakoory%2FDeepMPTB&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=views&edge_flat=true)
 
+If you use DeepMPTB in your work, please cite the DeepMPTB paper:
+
+Oshma Chakoory, Vincent Barra, Emmanuelle Rochette, Loïc Blanchon, Vincent Sapin, Etienne Merlin, Maguelonne Pons, Denis Gallot, Sophie Comtet-Marre & Pierre Peyret. DeepMPTB: a vaginal microbiome-based deep neural network as artificial intelligence strategy for efficient preterm birth prediction. Biomark Res 12, 25 (2024). https://doi.org/10.1186/s40364-024-00557-1 
+
 DeepMPTB can directly be accessed here: https://deepmptb.streamlit.app/
 
 # Running the application locally
