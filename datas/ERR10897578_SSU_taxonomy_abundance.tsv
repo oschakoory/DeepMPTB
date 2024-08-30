@@ -1,0 +1,15 @@
+"ID"	"Domain"	"Phylum"	"Class"	"Order"	"Family"	"Genus"	"Species"	"Confidence"	"Length"	"Assigned_reads"	"Relative_abundance"
+"EU454087.1.1428"	"d__Bacteria"	"p__Firmicutes"	"c__Bacilli"	"o__Lactobacillales"	"f__Lactobacillaceae"	"g__Lactobacillus"	"s__unclassified_Lactobacillus"	0.999999997767407	1428	1	0.008678
+"FJ975926.1.1358"	"d__Bacteria"	"p__Firmicutes"	"c__Bacilli"	"o__Lactobacillales"	"f__Lactobacillaceae"	"g__Lactobacillus"	"s__unclassified_Lactobacillus"	0.999999998432275	1358	6	0.052065
+"AY349382.1.1568"	"d__Bacteria"	"p__Firmicutes"	"c__Bacilli"	"o__Lactobacillales"	"f__Lactobacillaceae"	"g__Lactobacillus"	"s__unclassified_Lactobacillus"	0.999999999445859	1568	38	0.329747
+"EF097828.1.1432"	"d__Bacteria"	"p__Firmicutes"	"c__Bacilli"	"o__Lactobacillales"	"f__Lactobacillaceae"	"g__Lactobacillus"	"s__unclassified_Lactobacillus"	0.999999999949851	1432	37	0.321069
+"EU451676.1.1433"	"d__Bacteria"	"p__Firmicutes"	"c__Bacilli"	"o__Lactobacillales"	"f__Lactobacillaceae"	"g__Lactobacillus"	"s__unclassified_Lactobacillus"	0.99999999985766	1433	6	0.052065
+"KF105693.1.1399"	"d__Bacteria"	"p__Firmicutes"	"c__Bacilli"	"o__Lactobacillales"	"f__Lactobacillaceae"	"g__Lactobacillus"	"s__unclassified_Lactobacillus"	0.999999997651045	1399	23	0.199583
+"CP019058.1615440.1616976"	"d__Bacteria"	"p__Actinobacteriota"	"c__Actinobacteria"	"o__Bifidobacteriales"	"f__Bifidobacteriaceae"	"g__Gardnerella"	"s__Gardnerella_vaginalis"	0.991299118924111	1537	9410	81.655675
+"CP021427.1054118.1055702"	"d__Bacteria"	"p__Firmicutes"	"c__Bacilli"	"o__Lactobacillales"	"f__Lactobacillaceae"	"g__Lactobacillus"	"s__Lactobacillus_gasseri"	0.909627514910439	1585	1928	16.730302
+"AB976550.1.1518"	"d__Bacteria"	"p__Firmicutes"	"c__Bacilli"	"o__Lactobacillales"	"f__Lactobacillaceae"	"g__Lactobacillus"	"s__Lactobacillus_gasseri"	0.970300637094635	1518	26	0.225616
+"AB976553.1.1512"	"d__Bacteria"	"p__Firmicutes"	"c__Bacilli"	"o__Lactobacillales"	"f__Lactobacillaceae"	"g__Lactobacillus"	"s__Lactobacillus_gasseri"	0.98501466785753	1512	2	0.017355
+"AB976555.1.1487"	"d__Bacteria"	"p__Firmicutes"	"c__Bacilli"	"o__Lactobacillales"	"f__Lactobacillaceae"	"g__Lactobacillus"	"s__Lactobacillus_gasseri"	0.979939869977718	1487	11	0.095453
+"EU453125.1.1431"	"d__Bacteria"	"p__Firmicutes"	"c__Bacilli"	"o__Lactobacillales"	"f__Lactobacillaceae"	"g__Lactobacillus"	"s__uncultured_Lactobacillus"	0.850251065456646	1431	3	0.026033
+"EU455729.1.1427"	"d__Bacteria"	"p__Firmicutes"	"c__Bacilli"	"o__Lactobacillales"	"f__Lactobacillaceae"	"g__Lactobacillus"	"s__uncultured_Lactobacillus"	0.836808411788036	1427	2	0.017355
+"EU454305.1.1430"	"d__Bacteria"	"p__Firmicutes"	"c__Bacilli"	"o__Lactobacillales"	"f__Lactobacillaceae"	"g__Lactobacillus"	"s__uncultured_Lactobacillus"	0.960160924832792	1430	31	0.269004

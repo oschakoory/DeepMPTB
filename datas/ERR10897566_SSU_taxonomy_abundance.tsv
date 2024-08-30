@@ -1,3 +1,0 @@
-"ID"	"Domain"	"Phylum"	"Class"	"Order"	"Family"	"Genus"	"Species"	"Confidence"	"Length"	"Assigned_reads"	"Relative_abundance"
-"KF100244.1.1348"	"d__Bacteria"	"p__Firmicutes"	"c__Clostridia"	"o__Peptostreptococcales-Tissierellales"	"f__Peptostreptococcales-Tissierellales"	"g__Anaerococcus"	"s__unclassified_Anaerococcus"	0.999999999999943	1348	98	60.493827
-"HQ757387.1.1425"	"d__Bacteria"	"p__Fusobacteriota"	"c__Fusobacteriia"	"o__Fusobacteriales"	"f__Fusobacteriaceae"	"g__Fusobacterium"	"s__uncultured_Fusobacterium"	0.903615607380347	1425	64	39.506173
