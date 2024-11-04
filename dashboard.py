@@ -167,7 +167,7 @@ def my_prediction(unknown, new_samp):
     prediction_ = encoder.inverse_transform(prediction_)
 
     st.info(
-        f"Risk prediction for {unknown} is: {prediction_[0]}")
+        f"Risk of PTB for {unknown} is: {prediction_[0]}")
 
     # -------------------------------------------------------------------------
 
