@@ -185,9 +185,9 @@ def my_prediction(unknown, new_samp):
 
     st.info("Features importance explaining local prediction")
 
-    st_shap(shap.summary_plot(shap_values[1],
-                    feature_names=test_sample_t.columns,
-                    plot_type="bar", show=False))
+    #st_shap(shap.summary_plot(shap_values[1],
+                    #feature_names=test_sample_t.columns,
+                    #plot_type="bar", show=False))
     
     st_shap(waterfall(Explanation(shap_values[1][0], 
         explainer.expected_value[1], 
